@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineering projects by Braden Nicholson — design, testing, and automation." />
+  <title>Projects · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">Braden Nicholson</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="is-active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="lead">A selection of engineering work. Each card is a placeholder —
+         add images, detail, and links as you build it out.</p>
+
+      <div class="grid">
+
+        <!-- ===== Project card template — copy this block for new projects ===== -->
+        <article class="card">
+          <!-- TODO: add images/gleeble.jpg -->
+          <h3>High-Temperature Fracture Toughness (Thesis)</h3>
+          <p class="card__meta">2022 – Present · Research</p>
+          <p>Outfitting a Gleeble 3800 with a novel apparatus using induction heating and
+             optical methods to measure fracture properties of metals at extreme temperatures.</p>
+        </article>
+
+        <article class="card">
+          <h3>Automated Injection Moulding Machine</h3>
+          <p class="card__meta">2023 – Present · Design &amp; Automation</p>
+          <p>Automating a manual desktop injection-moulding machine with motors, a powertrain,
+             microcontrollers, and control algorithms.</p>
+        </article>
+
+        <article class="card">
+          <h3>Low-Force Tensile Grips</h3>
+          <p class="card__meta">2024 · Precision Design</p>
+          <p>Designed and manufactured precision tensile grips for synthesized ductile polymers —
+             clamping firmly without deforming the sample.</p>
+        </article>
+
+        <article class="card">
+          <h3>Magnetic Stirring Device</h3>
+          <p class="card__meta">2023 · Design &amp; Manufacture</p>
+          <p>A device to stir a reaction under vacuum, using a magnetic coupling to transfer
+             torque across an airtight seal.</p>
+        </article>
+
+        <article class="card">
+          <h3>Microslice Refurbishment</h3>
+          <p class="card__meta">Lab Equipment</p>
+          <p>Refurbishment of laboratory microslice equipment.
+             <!-- TODO: expand description --></p>
+        </article>
+
+        <!-- TODO: Add more project cards here using the template above. -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Braden Nicholson · Mechanical Engineer</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

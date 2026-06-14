@@ -1,0 +1,17 @@
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Secrets / private notes — never commit these
+Network solutions PIN.txt
+*PIN*.txt
+*secret*
+*password*
+
+# Notes that shouldn't ship with the site (optional — remove if you want it tracked)
+# images/README.txt
