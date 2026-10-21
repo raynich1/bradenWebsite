@@ -3,83 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Braden Nicholson — Mechanical Engineer. Materials testing, mechanical design, and research." />
+  <meta name="description" content="Braden Nicholson — Mechanical Engineer. Online portfolio of education, dissertation, and work." />
   <title>Braden Nicholson · Mechanical Engineer</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
-<body>
+<body class="sidebar-hidden">
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
 
-  <!-- ============ HEADER / NAV ============ -->
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__brand">Braden Nicholson</a>
-      <ul class="nav__links">
-        <li><a href="index.html" class="is-active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <main class="content">
+    <section class="section">
+      <div class="container">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="container">
-      <h1>Braden Nicholson</h1>
-      <p class="tagline">Mechanical Engineer · Materials Testing &amp; Mechanical Design</p>
-      <p>
-        <a href="projects.html" class="btn">View My Work</a>
-        <a href="contact.html" class="btn btn--ghost">Get in Touch</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ INTRO ============ -->
-  <section class="section">
-    <div class="container">
-      <h2>Hello</h2>
-      <p class="lead">
-        I'm a mechanical engineer based in Cape Town, South Africa, and Rockford, IL, USA,
-        currently completing an MScEng at the University of Cape Town. I specialise in
-        materials testing, the design of research equipment, and turning experimental
-        ideas into working hardware.
-      </p>
-      <!-- TODO: Replace the paragraph above with your own elevator pitch. -->
-    </div>
-  </section>
-
-  <!-- ============ HIGHLIGHTS ============ -->
-  <section class="section section--alt">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Mechanical Design</h3>
-          <p class="card__meta">Concept → CAD → manufacture</p>
-          <p>Designing and building precision equipment for research and industry.</p>
+        <div class="hero--home">
+          <div class="hero__inner">
+            <div class="hero__text">
+              <h1>Braden Nicholson</h1>
+              <p class="page-subtitle">Mechanical Engineer · Rockford, IL / Cape Town, South Africa</p>
+              <p class="hero__links">
+                <a href="https://linkedin.com/in/braden-nicholson/" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="Resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">View résumé</a>
+                <a href="contact.html" class="btn btn--ghost">Contact me</a>
+              </p>
+            </div>
+            <img class="hero__photo" src="images/home/header%20picture%20option%203%20cropped.jpg" alt="Braden Nicholson" />
+          </div>
         </div>
-        <div class="card">
-          <h3>Materials Testing</h3>
-          <p class="card__meta">Mechanical characterisation</p>
-          <p>Fracture toughness, tensile testing, and high-temperature methods.</p>
+
+        <p class="lead">
+          I am a mechanical engineering graduate and Masters student close to finishing my degree.
+          This website is my online portfolio containing details of my education, my dissertation
+          (writeup in progress), work I have done, and projects/interesting things.
+        </p>
+
+        <div class="home-cards">
+          <a class="home-card" href="dissertation.html">
+            <img src="images/home/hot%20stuff%201150%20close.jpg" alt="" loading="lazy" />
+            <span class="home-card__title">Masters dissertation</span>
+          </a>
+          <a class="home-card" href="experience.html">
+            <img src="images/home/Microslice%20full.jpg" alt="" loading="lazy" />
+            <span class="home-card__title">Experience</span>
+          </a>
+          <a class="home-card" href="undergrad.html">
+            <img src="images/home/Testing%20Rig%20Image.jpg" alt="" loading="lazy" />
+            <span class="home-card__title">Undergrad work</span>
+          </a>
+          <a class="home-card" href="education.html">
+            <img src="images/home/UCT.jpg" alt="" loading="lazy" />
+            <span class="home-card__title">Education</span>
+          </a>
         </div>
-        <div class="card">
-          <h3>Research &amp; Automation</h3>
-          <p class="card__meta">Hardware + software</p>
-          <p>Automating lab equipment and streamlining test-data workflows.</p>
-        </div>
+
       </div>
-      <!-- TODO: Add, remove, or reword these cards as your focus areas evolve. -->
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Braden Nicholson · Mechanical Engineer</p>
-    </div>
-  </footer>
+    <section class="section">
+      <div class="container">
+        <h2>A summary</h2>
+
+        <p>
+          I am originally from Streamwood, IL, born to an American father and a South African
+          mother. My affinity for mechanical things led me to begin studying mechanical
+          engineering at Northern Illinois University where my time was split between studying
+          (3.701&nbsp;GPA, Honors program), playing rugby, doing campus ministry, and working at
+          Lowe's (since COVID-19 made learning less efficient).
+        </p>
+
+        <p>
+          After 2021, I moved to finish my degree at the University of Cape Town in South Africa,
+          a <a href="https://www.timeshighereducation.com/world-university-rankings/university-cape-town" target="_blank" rel="noopener">top-ranked institution</a>
+          which I found to be intense and challenging. It was also made possible due to the
+          degree's validity in the United States through the
+          <a href="https://www.internationalengineeringalliance.org/accords/washington-accord" target="_blank" rel="noopener">Washington Accord</a>.
+          The experience exposed me to many new things academically and socially.
+        </p>
+
+        <figure class="home-map">
+          <img src="images/home/Location%20map.png" alt="My journey from Streamwood, to DeKalb, to Cape Town." loading="lazy" />
+          <figcaption class="card__meta">My journey from Streamwood, to DeKalb, to Cape Town.</figcaption>
+        </figure>
+
+        <p>
+          During my undergrad I was offered a place at the Centre for Materials Engineering at the
+          university, working on projects which proved to be highly educational&mdash;see the
+          <a href="experience.html">experience</a> page. I finished undergrad with the South
+          African equivalent of an A average and won the class award for the best final-year
+          project. Towards the end of my undergrad, the
+          <a href="https://scholar.google.com/citations?user=fXvgrj0AAAAJ&amp;hl=en" target="_blank" rel="noopener">director</a>
+          of the Centre offered me a dissertation-based Masters position (still mechanical
+          engineering, but in a materials science laboratory). I started that in January 2025, and
+          it is nearing completion towards the end of 2026. For the future, I am looking for
+          engineering work that will continue to challenge me and engage my mind.
+        </p>
+
+      </div>
+    </section>
+
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

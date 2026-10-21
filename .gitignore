@@ -15,3 +15,15 @@ Network solutions PIN.txt
 
 # Notes that shouldn't ship with the site (optional — remove if you want it tracked)
 # images/README.txt
+
+# Working spec/notes files — not part of the published site
+home.md
+experience.md
+education.md
+dissertation.md
+undergrad.md
+contact.md
+images/Map images.pptx
+
+# Large source videos (site uses YouTube embeds, not committed media)
+*.mp4

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Calculations and computation in Braden Nicholson's dissertation." />
+  <title>Dissertation — Calculations and computation · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container">
+        <h1>Calculations and computation</h1>
+
+        <p>
+          Calculations for the design were broadly separated into mechanical and thermal.
+          Mechanical calculations were simple enough to use standard relationships for:
+        </p>
+        <ol>
+          <li>Hertz contact stresses given a cylindrical pin contact with a hole.</li>
+          <li>A stress concentration at the edges of the pin-loaded hole.</li>
+          <li>Pin shear stress (and bending induced by imperfect geometry).</li>
+        </ol>
+        <p>
+          This did not stretch far beyond the things already present in an undergraduate
+          engineering curriculum. Out of curiosity, though,
+        </p>
+
+        <p>
+          The complexity of the system meant a thorough computational solution for its thermal
+          characteristics was near impossible, and the mechanical components were easy enough to
+          calculate conventionally that simulations were not needed. Simulation work therefore was
+          not part of my dissertation, but at some points throughout the project I set up some
+          simulations out of curiosity, some of which aided minimally in the design. They were all
+          done with ANSYS. For the electromagnetic/thermal simulations, I found the
+          <a href="https://docs.pyansys.com/" target="_blank" rel="noopener">Python API</a> to be
+          nice and intuitive (much better than working with the UI!) while for the mechanical
+          simulations I simply worked with the UI, but made a note that I should get used to that
+          Python library as well since it will ultimately make running simulations much more
+          efficient (after the learning curve is passed).
+        </p>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

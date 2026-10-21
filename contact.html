@@ -6,56 +6,34 @@
   <meta name="description" content="Get in touch with Braden Nicholson, mechanical engineer." />
   <title>Contact · Braden Nicholson</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__brand">Braden Nicholson</a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="is-active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <main class="content">
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
 
-  <section class="section">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p class="lead">I'm open to mechanical engineering opportunities and collaboration.</p>
-
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="mailto:raynich1@gmail.com">raynich1@gmail.com</a></li>
-        <li><strong>Phone (US):</strong> <a href="tel:+18476382895">(847) 638-2895</a></li>
-        <li><strong>Phone (SA):</strong> <a href="tel:+27781813314">+27 78 181 3314</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/braden-nicholson/" target="_blank" rel="noopener">linkedin.com/in/braden-nicholson</a></li>
-        <li><strong>Location:</strong> Cape Town, South Africa · Rockford, IL, USA</li>
-      </ul>
-
-      <!-- ============ OPTIONAL CONTACT FORM ============
-           This form has no backend yet. To make it send messages, either:
-             • use a service like Formspree (set the action URL), or
-             • wire it to your own endpoint.
-           Until then it's a non-functional placeholder. -->
-      <!--
-      <form action="https://formspree.io/f/your-id" method="POST" style="max-width:480px;margin-top:2rem;">
-        <p><input name="name" placeholder="Your name" required style="width:100%;padding:.6rem;" /></p>
-        <p><input name="email" type="email" placeholder="Your email" required style="width:100%;padding:.6rem;" /></p>
-        <p><textarea name="message" placeholder="Message" rows="5" required style="width:100%;padding:.6rem;"></textarea></p>
-        <p><button class="btn" type="submit">Send</button></p>
-      </form>
-      -->
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Braden Nicholson · Mechanical Engineer</p>
-    </div>
-  </footer>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:raynich1@gmail.com">raynich1@gmail.com</a></li>
+          <li><strong>Phone (US):</strong> <a href="tel:+18476382895">(847) 638-2895</a></li>
+          <li><strong>Phone (SA):</strong> <a href="tel:+27781813314">+27 78 181 3314</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/braden-nicholson/" target="_blank" rel="noopener">linkedin.com/in/braden-nicholson</a></li>
+          <li><strong>Location:</strong> Cape Town, South Africa · Rockford, IL, USA</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

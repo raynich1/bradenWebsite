@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Electromagnetic/thermal simulations in Braden Nicholson's dissertation." />
+  <title>Dissertation — Electromagnetic/thermal simulations · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container">
+        <h1>Electromagnetic/thermal simulations</h1>
+
+        <p>
+          I found ANSYS Electronics to be powerful in combining an induction heating simulation
+          (using their eddy current solver in Maxwell 3D) with a heat transfer/convective cooling
+          simulation (in Icepak), just like the setup in the Gleeble. It would find eddy currents,
+          solve for a power loss distribution, and then using the cooling characteristics solve for
+          a steady-state temperature distribution. What this couldn't account for was radiation, so
+          I did not take the temperature values as trustworthy, but it was valuable for my
+          education and gave me an idea of the power loss distribution I could expect in my parts.
+          Crucially, it showed me how well the coils' cast iron outer shields limited the extent of
+          the magnetic field&mdash;this meant I could put components very close to the coils without
+          directly heating them.
+        </p>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

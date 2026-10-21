@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mechanical simulations in Braden Nicholson's dissertation." />
+  <title>Dissertation — Mechanical simulations · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container">
+        <h1>Mechanical simulations</h1>
+        <p>
+          I knew fellow Masters students whose entire projects revolved around contact stress
+          simulations&mdash;it was obvious that refining a simulation to give me accurate contact
+          stress results would be an enormous effort for litte reward. Therefore, design was done
+          based on data from literature and conventional principles. Still, I spent some time in
+          ANSYS Mechanical learning about the pros and cons of various meshing strategies/element
+          types and problem definitions. I got to see firsthand how valuable it is to be able to
+          simplify geometry for the sake of a cleaner mesh and a faster solution.
+        </p>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

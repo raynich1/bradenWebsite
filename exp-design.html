@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Design, maintenance and modification of lab equipment by Braden Nicholson." />
+  <title>Design/modification/upkeep of lab equipment · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Design/modification/upkeep of lab equipment</h1>
+        <p>
+          I have been given various equipment design and maintenance jobs in the lab which have
+          been incredibly educational for me. Many of the lessons I have learned can be traced back
+          to these unique tasks. The following are some examples of things I have done.
+        </p>
+
+        <details class="collapse">
+          <summary>Custom vacuum stirring device for chemical reactions</summary>
+          <div class="collapse__body">
+            <figure class="details__item">
+              <img src="images/experience/MS%20side%20by%20side.jpg" alt="The assembled magnetically coupled stirrer" loading="lazy" />
+              <figcaption class="card__meta">The assembled magnetically coupled stirrer.</figcaption>
+            </figure>
+
+            <figure class="wrap-right">
+              <img src="images/experience/Magnetic%20stirring%20pill.jpg" alt="A normal magnetic stirring setup with the pill" loading="lazy" />
+              <figcaption class="card__meta">A normal magnetic stirring setup with the 'pill'.</figcaption>
+            </figure>
+            <p>
+              One of the researchers in the lab was struggling with keeping chemical reactions
+              stirring under vacuum. The general method for doing this is to place a magnetically
+              polarized PTFE-coated bar in the beaker which, given a rotating magnetic field, will
+              spin. The problem was that when the fluid became too viscous, the magnetic field was
+              not strong enough and the stirrer would stop spinning. What he needed was a
+              magnetically coupled, chemically inert stirring device strong enough to stir through
+              viscous fluids. To maintain chemical inertness, everything on the reaction side of the
+              vacuum seal was machined from PTFE. The design consisted of an inner rotor coupled to
+              an outer rotor using neodymium magnets&mdash;the outer rotor was driven by a motorized
+              overhead stirrer.
+            </p>
+
+            <div class="fig-even">
+              <img src="images/experience/MS%20design%20section%20view.PNG" alt="A section view of the stirrer design" loading="lazy" />
+              <img src="images/experience/Fit%20Notes%20Image.png" alt="An assembly image of the stirrer design" loading="lazy" />
+            </div>
+            <p class="card__meta">A section view and assembly image of the design.</p>
+          </div>
+        </details>
+
+        <details class="collapse">
+          <summary>Automation of a desktop-sized injection molding machine</summary>
+          <div class="collapse__body">
+            <p>
+              I spent much of my spare time attempting to take a decades-old, manually operated
+              injection molding machine apart and rebuild it by driving it with a geared three-phase
+              motor and a sprocket and chain. The project neared completion before it was
+              discontinued due to a blown heating coil and lack of necessity, but I regard it as one
+              of the most educational experiences of my time at UCT.
+            </p>
+            <div class="details__row">
+              <figure class="details__item">
+                <img src="images/experience/AIM%20original%20machine.jpg" alt="The injection molding machine before modification" loading="lazy" />
+                <figcaption class="card__meta">The machine before I got my hands on it.</figcaption>
+              </figure>
+              <figure class="details__item">
+                <img src="images/experience/AIM%20mold.jpg" alt="A mold mounted to the machine" loading="lazy" />
+                <figcaption class="card__meta">A mold mounted to the machine. The mistake I made designing the mounting system was underestimating how much frame stiffness was needed. It turned out to be too easy to misalign.</figcaption>
+              </figure>
+            </div>
+            <figure class="details__item">
+              <img src="images/experience/AIM%20breadboard.jpg" alt="Prototype circuit on breadboards" loading="lazy" />
+              <figcaption class="card__meta">A very messy prototype circuit on breadboards before I moved to protoboard.</figcaption>
+            </figure>
+
+            <p>The machine had three main systems which needed automation:</p>
+            <ol>
+              <li>
+                The heating, which heated the thermoplastic to &gt;300&nbsp;&deg;C. This originally
+                was done via a manual dial on the side which didn't even have temperature labels!
+                Just 'hot' and 'less hot', presumably.
+              </li>
+              <li>
+                <figure class="wrap-right">
+                  <img src="images/experience/AIM%20powertrain.PNG" alt="The shaft and pinion gear with a model of a sprocket" loading="lazy" />
+                </figure>
+                The compression&mdash;there was a shaft that ran axially through the length of the
+                machine, which was actuated by a pinion gear, which itself was machined into a shaft
+                with a spline fit on the end. The image to the side shows the shaft and pinion gear
+                (machine-native) with a model of a sprocket (which was my addition). Originally,
+                there was just a drill press-style handle on the end of the pinion gear shaft, which
+                did not allow for any kind of injection pressure control.
+              </li>
+              <li>
+                The mold clamping. At the bottom of the machine, the mold needed to be clamped
+                during injection to hold pressure, then separated after the part had cooled. This
+                was also done by a drill press-style lever originally.
+              </li>
+            </ol>
+
+            <p>
+              I was given the project in 2023 originally and immediately made several mistakes in
+              the original design phase. At the time, I was much less aware of my own inexperience as
+              I am now. Regarding actuating the compression shaft, I knew I would need a fairly large
+              motor and significant gear reduction (I needed 322 N*m of torque at the pinion gear for
+              50 MPa of injection pressure), but I had grandiose dreams of designing my own gearbox.
+              I quickly realized that not only was it a bad way to save money, but it was a
+              significantly larger task than anticipated.
+            </p>
+          </div>
+        </details>
+
+        <details class="collapse">
+          <summary>Refurbishment of a microslice</summary>
+          <div class="collapse__body">
+            <p>
+              A microslice is a device that abrasively cuts slices of material for scientific
+              purposes (usually microscopy). The CME had a microslice for years that lay
+              nonfunctional because bad shaft design (a rotating shaft loaded at its end, supported
+              by a singular bearing far away) meant the shaft kept breaking. To fix this, I gutted
+              many of the inner components, including the electronics, and re&#8209;built it from the
+              inside. Ensuring concentric rotation was essential in this design.
+            </p>
+            <figure class="details__item">
+              <div class="details__video">
+                <iframe src="https://www.youtube.com/embed/3erpuLNHsMs"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+              </div>
+            </figure>
+          </div>
+        </details>
+
+        <details class="collapse">
+          <summary>Low-force tensile grips</summary>
+          <div class="collapse__body">
+            <p>
+              This was a relatively simple job having grips machined from stainless steel round bar.
+              This was first done in January 2024.
+            </p>
+            <div class="fig-even">
+              <img src="images/experience/instron-on-instron-web.jpg" alt="Grips on a 5 kN Instron frame" loading="lazy" />
+              <img src="images/experience/instron-on-zwick-web.jpg" alt="Grips adapted to a 200 kN Zwick frame" loading="lazy" />
+            </div>
+            <p class="card__meta">The grips mounted on a 5 kN Instron frame (left) and adapted to a 200 kN Zwick frame (right).</p>
+            <p>
+              The first pair worked well (when the gripping faces were laser engraved for greater
+              friction) but their design contained unnecessary machining steps. In July 2026, I
+              designed a second pair, this time for the Zwick, and simplified the design so they would
+              be easier to machine.
+            </p>
+            <!-- Image placeholder (per experience.md, "placeholder for now"). -->
+          </div>
+        </details>
+
+        <details class="collapse">
+          <summary>Camera positioning system</summary>
+          <div class="collapse__body">
+            <p>
+              The CME uses optical extensometry for tensile testing due to its superiority over
+              machine crosshead displacement as a strain metric. This required a custom
+              machine-mounted frame for positioning the camera in different places for different
+              tests. There was already one there which was hastily put together and not very
+              ergonomic or robust&mdash;it used a C-clamp which had to be repositioned each time the
+              camera was moved!
+            </p>
+            <figure class="details__item">
+              <img src="images/experience/ZCP%20old%20system.jpg" alt="The clamp formerly used to keep the system in place" loading="lazy" />
+              <figcaption class="card__meta">The clamp formerly used to keep the system in place.</figcaption>
+            </figure>
+            <p>
+              I designed a new frame with aluminum extrusion, plates and wheels, and belts and
+              pulleys. This allowed it to move up and down, forward and back, and side to side,
+              allowing maximum positioning freedom.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

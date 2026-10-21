@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The mechanical design of Braden Nicholson's dissertation apparatus." />
+  <title>Dissertation — Mechanical design · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Mechanical design</h1>
+
+        <p>
+          Designing fixtures for testing at room temperature would be inconsequential&mdash;all
+          you would need is a pair of clevises compatible with the sample and some connection to
+          the machine. The heating is what makes it an interesting design project. With standard
+          tensile tests, the sample is long and uniform, conforming to the coil geometry, so that
+          the sample can pass through the coils and be gripped on either side. The grips are kept
+          cool while the induction system heats the center of the sample to its test temperature,
+          inducing a thermal gradient. Compact tension samples, though, have more complex
+          geometry, and induction heating does not play nice with complex geometry.
+        </p>
+
+        <div class="fig-even">
+          <img src="images/dissertation/Tensile%20sample%20in%20coils.png" alt="A standard tensile sample in the induction coils" loading="lazy" />
+          <img src="images/dissertation/CT%20sample%20in%20coils.png" alt="A compact tension sample in the induction coils" loading="lazy" />
+        </div>
+        <p class="card__meta">A standard tensile sample vs a compact tension sample in the induction coils.</p>
+
+        <p>
+          Simple water cooled grips were attempted, which resulted in a thermal gradient between
+          the far edge of the sample and the mounting holes. This made a representative analysis
+          at temperature impossible, since the analysis procedure assumes uniform properties.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/thermal%20camera%20temp%20gradient.png" alt="Thermal camera image of the sample showing a temperature gradient" loading="lazy" />
+          <figcaption class="card__meta">A thermal camera image of the sample showing it is hotter at the top (500&nbsp;&deg;C) than at the notch tip and bottom.</figcaption>
+        </figure>
+
+        <p>
+          This was a predictable result considering there was no appreciable thermal insulation
+          between the sample and clevis&mdash;the pins were tungsten carbide, which has a high
+          thermal conductivity. It was clear that for the sample to be at a uniform temperature,
+          the clevises themselves had to be hot. This created both an interesting design problem
+          and a material selection problem. There had to be a thermal gradient <em>somewhere</em>
+          besides the sample, acting as the transition between the hot zone and the cool zone. Two
+          ideas that did not work were:
+        </p>
+        <ul>
+          <li>Thermally insulating pins. This was impractical because the geometry that would
+            allow for thermal insulation would also be bad for stress levels on the pin.</li>
+          <li>An insulating clevis. This would have been ideal, but no material exists and was
+            easily accessible that is both a thermal insulator and strong in tension (with a
+            transverse hole!) at 1000&nbsp;&deg;C.</li>
+        </ul>
+        <p>
+          The insulator had to be further back in the load train. The only suitable material for
+          the insulator would be a ceramic, meaning its most favorable loading condition would be
+          compression. Ultimately the below design was created.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/Clevis%20subassembly%20in%20CAD.png" alt="A deconstructed view of the original clevis subassembly design" loading="lazy" />
+          <figcaption class="card__meta">A deconstructed view of the original clevis subassembly design.</figcaption>
+        </figure>
+
+        <p>
+          The other notable feature of the design were the copper radiation shields. As the clevis
+          was being housed in a large metal enclosure, it would be wise to minimize radiative heat
+          transfer&mdash;enough radiation could lessen the effectiveness of the ceramic sleeve.
+        </p>
+        <p>
+          Regarding materials, a zirconia ceramic was chosen for the insulator (the white cylinder
+          in the picture) and a titanium-zirconium-molybdenum (TZM) refractory metal for the
+          clevis. Both of these maintain incredible strength for their loading conditions at high
+          temperature.
+        </p>
+
+        <div class="fig-even">
+          <img src="images/dissertation/Everything%20except%20clevis%20in%20subassembly.jpg" alt="The subassembly without the clevis" loading="lazy" />
+          <img src="images/dissertation/Closeup%20of%20graphite%20shim.jpg" alt="Close-up of the graphite shim" loading="lazy" />
+          <img src="images/dissertation/Everything%20including%20clevis%20in%20subassembly.jpg" alt="The subassembly including the clevis" loading="lazy" />
+        </div>
+        <p class="card__meta">Some steps of the assembly process.</p>
+
+        <p>Eventually, it looked nice and sleek on the machine.</p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/Rig%20on%20machine%20closeup.jpg" alt="The assembled initial mechanical design" loading="lazy" />
+          <figcaption class="card__meta">The assembled initial mechanical design.</figcaption>
+        </figure>
+
+        <p>
+          Little did I know that sleekness would not stay for long&mdash;see the
+          <a href="dissertation-heating.html">next section</a> to see why.
+        </p>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

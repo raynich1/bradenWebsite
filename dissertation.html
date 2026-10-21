@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Masters dissertation of Braden Nicholson — design of an extreme-temperature fracture toughness testing apparatus using induction heating." />
+  <title>Masters dissertation · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="hero hero--bg hero--dissertation">
+      <div class="container"><h1>Masters dissertation</h1></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p class="page-subtitle" style="text-align:center">Design of an extreme-temperature fracture toughness testing apparatus using induction heating</p>
+        <!-- TODO: set href to the dissertation PDF once available. -->
+        <p style="text-align:center"><a href="#" class="btn btn--ghost">Download dissertation (PDF)</a></p>
+
+        <h2>Overview</h2>
+
+        <figure class="details__item">
+          <img src="images/dissertation/Me%20with%20gleeble%20smiling.JPG" alt="" loading="lazy" />
+        </figure>
+
+        <figure class="wrap-right">
+          <img src="images/dissertation/Sample%20on%20ESH.jpg" alt="A sample mounted on a hydraulic ESH testing machine" loading="lazy" />
+          <figcaption class="card__meta">A sample mounted on a hydraulic ESH testing machine.</figcaption>
+        </figure>
+        <p>
+          If I could describe my Masters dissertation in a sentence, it would be
+          <em>a more efficient and versatile design for conducting high-temperature fracture
+          toughness tests.</em> (In short, these tests measure the resistance of a material to
+          cracks/imperfections, and are conducted by pulling a cracked sample such as the image on
+          the right.) Presently, testing at high temperature requires a furnace which causes two
+          main issues:
+        </p>
+        <ul>
+          <li>It takes hours to heat up and cool down for a single test.</li>
+          <li>It prevents the use of various measurement methods which are needed for accurate tests.</li>
+        </ul>
+        <p>
+          Temperature limitations, oxidation potential, and view obfuscation are other common
+          issues.
+        </p>
+
+        <p>
+          Fortunately the CME contains a Gleeble 3800, a machine with efficient induction heating
+          capabilities and a versatile chamber promising to address all the prior issues with
+          conducting these tests. However, it was not designed with any kind of fracture toughness
+          testing capability whatsoever.
+        </p>
+        <figure class="details__item">
+          <img src="images/dissertation/Gleeble.jpg" alt="The Gleeble" loading="lazy" />
+          <figcaption class="card__meta">The Gleeble.</figcaption>
+        </figure>
+
+        <p>
+          My project was to make fracture toughness testing work on the Gleeble at temperatures up
+          to 2,100&nbsp;&deg;F (1,000&nbsp;&deg;C) using optical measurement methods. This would end
+          up requiring the following things:
+        </p>
+        <ul>
+          <li>The physical design of a module to be fit onto the Gleeble. This was the biggest by far.</li>
+          <li>Development of a repeatable testing methodology and process for the machine.</li>
+          <li>A lot of testing, data analysis and result interpretation.</li>
+        </ul>
+        <p>
+          The following images are of the final functional prototype which even exceeded the
+          temperature goal initially set.
+        </p>
+
+        <div class="gallery">
+          <img src="images/dissertation/Positioning%20DIC%20cameras.JPG" alt="" loading="lazy" />
+          <img src="images/dissertation/hot%20stuff%20from%20outside%20chamber.JPG" alt="" loading="lazy" />
+          <img src="images/dissertation/hot%20stuff%201150%20medium.jpg" alt="" loading="lazy" />
+          <img src="images/dissertation/hot%20stuff%201000%20far.jpg" alt="" loading="lazy" />
+          <img src="images/dissertation/Subassembly%20parts%20on%20table.jpg" alt="" loading="lazy" />
+          <img src="images/dissertation/Sample%20without%20coils%20close%20up.JPG" alt="" loading="lazy" />
+          <img src="images/dissertation/Wide%20shot%20setup%20without%20me.JPG" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

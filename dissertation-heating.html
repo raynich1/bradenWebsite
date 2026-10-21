@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The heating coils in Braden Nicholson's dissertation apparatus." />
+  <title>Dissertation — Heating coils · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Heating coils</h1>
+
+        <p>
+          Upon testing, it was found that the insulating setup alone was not enough to provide a
+          uniform temperature. Fortunately, the design allowed for a critical modification: direct
+          heating of the clevises such that they no longer acted as heat sinks on the sample.
+          Nichrome wire and refractory cement were used to manufacture a heating coil around each
+          clevis as shown below.
+        </p>
+
+        <div class="fig-strip">
+          <img src="images/dissertation/clevis-1-before-web.jpg" alt="Clevis before casting" loading="lazy" />
+          <img src="images/dissertation/clevis-2-withmold-web.jpg" alt="Clevis after first casting, with mold" loading="lazy" />
+          <img src="images/dissertation/clevis-3-nomold-web.jpg" alt="Clevis after casting, without mold" loading="lazy" />
+          <img src="images/dissertation/clevis-4-wires-web.jpg" alt="Clevis with wires wrapped" loading="lazy" />
+        </div>
+        <p class="card__meta">Steps of the casting process.</p>
+
+        <p>
+          The clevises could then be put back into the assembly and mounted onto the machine, with
+          thermocouple and power supply wires insulated by alumina beads.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/Heating%20coil%20supply%20wires.jpg" alt="The design in the Gleeble chamber with the new coils" loading="lazy" />
+          <figcaption class="card__meta">The design in the Gleeble chamber with the new coils.</figcaption>
+        </figure>
+
+        <p>
+          A control circuit was designed and prototyped as well, using an ESP32 which outputs a
+          PWM signal to a MOSFET for each coil. A thermocouple was mounted to each clevis as a
+          feedback signal, and the temperature setpoint was defined by the sample's top face
+          temperature. This gave me a chance to design my first PCB ever, and it turned out just as
+          I had hoped!
+        </p>
+
+        <div class="fig-even">
+          <img src="images/dissertation/Prototype%20circuit.jpg" alt="The first prototype of the control circuit" loading="lazy" />
+          <img src="images/dissertation/Control%20circuit%202.jpg" alt="The second control circuit" loading="lazy" />
+        </div>
+        <p class="card__meta">The first prototype of the control circuit (left), and the second (right). The second prototype had a better user interface and could dissipate four times as much power.</p>
+
+        <p>
+          Ultimately, the assistance of the auxiliary coils was able to equalize the temperature
+          distribution across the sample, as seen below.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/800%20C%20thermal%20image%20uniform.png" alt="A thermal camera image at a nominal temperature of 800 degrees C showing temperature uniformity" loading="lazy" />
+          <figcaption class="card__meta">A thermal camera image at a nominal temperature of 800&nbsp;&deg;C showing temperature uniformity is possible.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

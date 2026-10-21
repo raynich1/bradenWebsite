@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Braden Nicholson's final-year project (SAIMechE award)." />
+  <title>Final-year project (SAIMechE award) · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Final-year project (SAIMechE award)</h1>
+
+        <p>
+          <strong>The short version:</strong> I developed an empirical relationship between motor
+          current and injection pressure in the
+          <a href="exp-design.html">injection molding machine</a> which I had already been working
+          on in the lab. It was enough to earn me the annual South African Institution of Mechanical
+          Engineering (SAIMechE) award for the best final-year project among my class.
+        </p>
+        <p>
+          <strong>The long version:</strong> My final-year project was based on my
+          <a href="exp-design.html">injection molder project</a> which had been running for about a
+          year prior. I decided to propose my own project instead of taking one from the list, which
+          gave me an opportunity to devote more time to the machine.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/undergrad%20work/Machine%20Front.jpg" alt="The injection molder with the geared motor, sprockets, and chain visible" loading="lazy" />
+          <figcaption class="card__meta">The injection molder with the geared motor, sprockets, and chain visible.</figcaption>
+        </figure>
+
+        <p>
+          The machine was driven by a geared AC motor for which I bought a variable frequency drive
+          (VFD), allowing me to achieve good control. Control of the pressure applied is important in
+          injection molding, and the pressure was related to the motor characteristics roughly by the
+          following diagram.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/undergrad%20work/Block%20Diagram%20Combined.png" alt="Block diagram of the relationships leading to applied pressure" loading="lazy" />
+          <figcaption class="card__meta">The chain of relationships that lead to a pressure being applied to the polymer.</figcaption>
+        </figure>
+
+        <p>
+          Direct pressure control using a pressure transducer would have been very
+          expensive&mdash;transducers that can handle those temperatures are highly
+          specialized&mdash;so I devised a simpler idea. If a relationship could be derived between
+          pressure and a controllable motor quantity, then tight control could be achieved without
+          direct pressure measurement. In this case, measuring both motor current and linear shaft
+          force (related to pressure by the cross-sectional area) would allow for a relationship to
+          be derived. This would make the control diagram much simpler:
+        </p>
+
+        <figure class="details__item">
+          <img src="images/undergrad%20work/Simplified%20Block%20Diagram.png" alt="Simplified block diagram with pressure known as a function of motor current" loading="lazy" />
+          <figcaption class="card__meta">The chain of relationships, provided pressure is known as a function of motor current.</figcaption>
+        </figure>
+
+        <p>
+          Most of the work came in setting up the testing apparatus. A custom load cell mount and
+          custom circuitry were designed, and the variable frequency drive had to communicate with
+          the HBM DAQ through a completely custom pin-by-pin interface. None of the infrastructure
+          existed for this, so I had to do it myself. Electromagnetic interference from the motor was
+          also a huge issue&mdash;I had to go to great pains to mitigate it.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/undergrad%20work/Testing%20Rig%20Image.jpg" alt="The testing rig with a Faraday cage to mitigate electromagnetic interference" loading="lazy" />
+          <figcaption class="card__meta">The testing rig&mdash;note the Faraday cage in the back to mitigate electromagnetic interference.</figcaption>
+        </figure>
+
+        <p>
+          The ultimate product of this looked unremarkable: a graph giving a relationship between
+          motor current and pressure.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/undergrad%20work/Combined%20Fit.png" alt="Polynomial fit of the current-pressure relationship" loading="lazy" />
+          <figcaption class="card__meta">The polynomial fit acting as the current-pressure relationship.</figcaption>
+        </figure>
+
+        <p>
+          This was the work that won me the SAIMechE award for the best final-year thesis after I had
+          been selected as one of six to present to the panel of professors and external examiners.
+        </p>
+
+        <div class="fig-pair">
+          <img src="images/undergrad%20work/SaiMechE%20award.jpg" alt="" loading="lazy" />
+          <img src="images/undergrad%20work/SAIMechE%20medal%20front.jpg" alt="" loading="lazy" />
+          <img src="images/undergrad%20work/SAIMechE%20medal%20back.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

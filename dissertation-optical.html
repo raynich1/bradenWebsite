@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Optical measurement methods in Braden Nicholson's dissertation." />
+  <title>Dissertation — Optical measurement methods · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Optical measurement methods</h1>
+
+        <p>
+          Part of my dissertation was about applying novel methods to fracture toughness testing. One
+          such method involved using digital image correlation (DIC) to measure both sample
+          displacement and the fracture toughness parameter (<em>J</em>-integral). In short, DIC
+          uses a high-contrast speckle pattern and cameras to track surface displacements and thus
+          strain and stress. The below is an example of a speckle pattern I applied to a surface.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/DIC%20speckle%20after%20breaking-web.jpg" alt="A speckle pattern on a sample after testing" loading="lazy" />
+          <figcaption class="card__meta">A speckle pattern on a sample after testing, where it can be seen that fracture did not cause the pattern to delaminate at all.</figcaption>
+        </figure>
+
+        <p>
+          Displacement maps such as the one below (taken with
+          <a href="https://www.matchid.eu/" target="_blank" rel="noopener">MatchID</a>) can then be
+          generated, from which lots of useful information can be taken.
+        </p>
+
+        <figure class="details__item">
+          <img src="images/dissertation/DIC%20out%20of%20plane%20displacement.jpg" alt="MatchID out-of-plane displacement of a sample" loading="lazy" />
+          <figcaption class="card__meta">A screenshot from MatchID of the out-of-plane displacement of a sample, showing its contraction at the crack tip.</figcaption>
+        </figure>
+
+        <p>
+          In my opinion, DIC-based fracture toughness testing provides some significant advantages
+          over standard methods, both in fracture toughness measurement and in high-temperature
+          applications. This is all discussed in my dissertation. Regardless, the project was a great
+          opportunity to learn about optical measurement techniques.
+        </p>
+
+        <figure class="details__item">
+          <div class="details__video details__video--wide">
+            <iframe src="https://www.youtube.com/embed/oeKhSqygCSg"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

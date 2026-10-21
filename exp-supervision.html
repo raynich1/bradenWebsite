@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Braden Nicholson's supervision of undergraduate vacation-work projects." />
+  <title>Supervision of undergrads · Braden Nicholson</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Show or hide navigation" aria-expanded="true">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-scrim" id="navScrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html">Braden Nicholson</a>
+    <nav class="sidebar__nav" id="sidebarNav"></nav>
+  </aside>
+
+  <main class="content">
+    <section class="section">
+      <div class="container details">
+        <h1>Supervision of undergrads</h1>
+
+        <p><strong>Short explanation:</strong> I was in charge of running winter and summer
+          vacation work design projects for undergrads in the lab.</p>
+        <p><strong>Long explanation:</strong> Most winter and summer vacations, I have supervised
+          undergrad students doing the same vacation work program that I originally did at the CME.
+          In their case I had them working on a pin-on-disk wear testing machine, pictured below.</p>
+
+        <figure class="details__item">
+          <img src="images/experience/pin-on-disk-web.jpg" alt="Pin-on-disk wear testing machine" loading="lazy" />
+        </figure>
+
+        <p>
+          The machine works by placing a spherical pin of some specified material onto a rotating
+          disk with some specified force. After a certain path length travelled, volume loss is
+          measured and thus surface wear properties are calculated. The students would be tasked
+          with helping to restore the machine both mechanically and electronically so that it could
+          be used for future experiments.
+        </p>
+        <p>
+          Realistically the task was beyond the capabilities of an average undergrad student in six
+          weeks, but the point of the exercise was never to have a perfectly usable machine for the
+          lab, but to provide undergrads with valuable experience (in an environment where they are
+          free to make lots of mistakes). It struck me that each time supervising them, the same
+          pattern would be followed. They would spend time grappling with the sub-tasks they were
+          assigned, which I encouraged them to do&mdash;rushing into solutions is ill advised when
+          time could be spent defining the problem. They would then come up with ideas and quickly
+          become attached to them, and it would take me a lot of work to convince them of the flaws.
+          Eventually, through frustration and backtracking, and with guidance, their designs would
+          steadily improve until I gave the green light to manufacture them.
+        </p>
+        <p>
+          This was striking because it was the same process I have struggled with in the past:
+          becoming emotionally attached to the first, second, or third design, to the point where it
+          becomes difficult to see its problems. I've realized that one of the most valuable skills
+          an engineer can have is to criticize his/her own work as harshly as anybody else's work.
+          Perhaps this is the same reason having supervisors is important. Now, when I am advising or
+          supervising undergrads, this is one of the things I stress the most:
+          <em>do not become emotionally attached to your designs.</em> Personally, I'd be lying if I
+          said I don't still struggle with this, but I am aware of the problem and actively working
+          on improving to some effect.
+        </p>
+      </div>
+    </section>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Braden Nicholson</p></footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
