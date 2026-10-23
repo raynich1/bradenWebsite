@@ -883,6 +883,23 @@ details[id], [id].acc__title, .acc-sub__body h3, .acc-sub__body h4,
   border-radius: var(--radius);
 }
 
+/* Width-sized image rows: images share the row width as a percentage of the text
+   column (overrides fig-even's fixed height). Combine --fill with a width class. */
+.fig-even--fill { flex-wrap: nowrap; align-items: center; margin-left: auto; margin-right: auto; }
+.fig-even--fill img { height: auto; width: 100%; max-width: none; flex: 1 1 0; min-width: 0; }
+.fig-even--w70 { max-width: 70%; }
+.fig-even--w90 { max-width: 90%; }
+.fig-even--w100 { max-width: 100%; }
+@media (max-width: 560px) {
+  .fig-even--fill { flex-wrap: wrap; }
+  .fig-even--fill img { flex-basis: 100%; }
+  .fig-even--w70, .fig-even--w90, .fig-even--w100 { max-width: 100%; }
+}
+
+/* Single-figure width overrides (percentage of the text column). */
+.details__item--w90 img { max-width: 90%; }
+.details__item--w50 img { max-width: 50%; }
+
 /* Lab project list (experience page) — bullets with figures inside. */
 .lab-projects { padding-left: 1.1rem; }
 .lab-projects > li { margin-bottom: 2.25rem; }
