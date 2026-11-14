@@ -6,16 +6,16 @@
 var NAV_TREE = [
   { t: "Home", file: "index.html" },
   { t: "Education", file: "education.html" },
-  { t: "Masters dissertation", file: "dissertation.html", children: [
-    { t: "Design and materials", file: "dissertation-design.html", children: [
-      { t: "Mechanical design", file: "dissertation-mech-design.html" },
-      { t: "Heating coils", file: "dissertation-heating.html" }
+  { t: "Masters thesis", file: "thesis.html", children: [
+    { t: "Design and materials", file: "thesis-design.html", children: [
+      { t: "Mechanical design", file: "thesis-mech-design.html" },
+      { t: "Heating coils", file: "thesis-heating.html" }
     ] },
-    { t: "Fracture mechanics and testing methods", file: "dissertation-fracture.html" },
-    { t: "Optical measurement methods", file: "dissertation-optical.html" },
-    { t: "Calculations and computation", file: "dissertation-computational.html", children: [
-      { t: "Electromagnetic/thermal simulations", file: "dissertation-em-sim.html" },
-      { t: "Mechanical simulations", file: "dissertation-mech-sim.html" }
+    { t: "Fracture mechanics and testing methods", file: "thesis-fracture.html" },
+    { t: "Optical measurement methods", file: "thesis-optical.html" },
+    { t: "Calculations and computation", file: "thesis-computational.html", children: [
+      { t: "Electromagnetic/thermal simulations", file: "thesis-em-sim.html" },
+      { t: "Mechanical simulations", file: "thesis-mech-sim.html" }
     ] }
   ] },
   { t: "Experience", file: "experience.html", children: [

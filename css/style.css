@@ -554,7 +554,7 @@ details[id], [id].acc__title, .acc-sub__body h3, .acc-sub__body h4,
   background: var(--color-border);
 }
 
-/* ---------- Masters dissertation: Details flow ---------- */
+/* ---------- Masters thesis: Details flow ---------- */
 .details__item { margin: 0 0 0.5rem; text-align: center; }
 .details__item img {
   width: 100%;
@@ -645,10 +645,10 @@ details[id], [id].acc__title, .acc-sub__body h3, .acc-sub__body h4,
     linear-gradient(rgba(15, 42, 74, 0.55), rgba(15, 42, 74, 0.55)),
     url("../images/experience/experience-header-web.jpg");
 }
-.hero--dissertation {
+.hero--thesis {
   background-image:
     linear-gradient(rgba(15, 42, 74, 0.55), rgba(15, 42, 74, 0.55)),
-    url("../images/dissertation/thermal%20viewport.jpg");
+    url("../images/thesis/thermal%20viewport.jpg");
 }
 .hero--undergrad {
   background-image:
@@ -956,7 +956,7 @@ details[id], [id].acc__title, .acc-sub__body h3, .acc-sub__body h4,
   .wrap-right { float: none; width: 100%; max-width: none; margin: 1rem auto; }
 }
 
-/* Simple responsive image gallery (e.g. the dissertation overview). */
+/* Simple responsive image gallery (e.g. the thesis overview). */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

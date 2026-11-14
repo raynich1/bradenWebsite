@@ -20,10 +20,13 @@ Network solutions PIN.txt
 home.md
 experience.md
 education.md
-dissertation.md
+thesis.md
 undergrad.md
 contact.md
 images/Map images.pptx
 
 # Large source videos (site uses YouTube embeds, not committed media)
 *.mp4
+
+# Generated page PDFs
+pdf/
